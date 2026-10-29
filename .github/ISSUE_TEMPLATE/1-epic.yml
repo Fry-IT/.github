@@ -7,18 +7,7 @@ body:
     attributes:
       value: |
         **Epics are outcomes, not work items.** They are never added to a sprint and are never closed by a pull request.
-        Once created, add Tasks and Bugs as sub-issues and set Start date, Target date and Product in the Project.
-  - type: dropdown
-    id: product
-    attributes:
-      label: Product
-      options:
-        - risr/assess
-        - risr/apply
-        - risr/advance
-        - iPad
-    validations:
-      required: true
+        Once created, set **Module**, **Start date** and **Target date** in the sidebar, then add Tasks and Bugs as sub-issues.
   - type: textarea
     id: outcome
     attributes:

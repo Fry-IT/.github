@@ -1,0 +1,46 @@
+name: Bug
+description: Something isn't working as expected.
+title: "[Bug] "
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If this bug relates to an epic currently in delivery, set that epic as the parent issue. Otherwise leave it unparented for triage.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - risr/assess
+        - risr/apply
+        - risr/advance
+        - iPad
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What was expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: support-ref
+    attributes:
+      label: Support ticket reference (optional)

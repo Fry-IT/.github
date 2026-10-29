@@ -1,0 +1,28 @@
+name: Task
+description: A single piece of work that fits in one sprint and belongs to an epic.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Every task must belong to an epic.** After creating it, set the parent epic in the sidebar under *Relationships → Parent issue*.
+        Tasks are closed automatically when a pull request containing `Closes #<this issue>` is merged.
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs doing
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Technical notes (optional)

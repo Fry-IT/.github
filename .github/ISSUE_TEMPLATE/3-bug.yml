@@ -6,18 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Once created, set **Module** and **Priority** in the sidebar.
         If this bug relates to an epic currently in delivery, set that epic as the parent issue. Otherwise leave it unparented for triage.
-  - type: dropdown
-    id: product
-    attributes:
-      label: Product
-      options:
-        - risr/assess
-        - risr/apply
-        - risr/advance
-        - iPad
-    validations:
-      required: true
   - type: textarea
     id: what-happened
     attributes:

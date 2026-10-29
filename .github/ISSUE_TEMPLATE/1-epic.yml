@@ -1,0 +1,48 @@
+name: Epic
+description: A customer-visible outcome spanning multiple sprints. Break it down into tasks.
+title: "[Epic] "
+type: Epic
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Epics are outcomes, not work items.** They are never added to a sprint and are never closed by a pull request.
+        Once created, add Tasks and Bugs as sub-issues and set Start date, Target date and Product in the Project.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - risr/assess
+        - risr/apply
+        - risr/advance
+        - iPad
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What will users be able to do once this is delivered, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope / out of scope
+      placeholder: |
+        In scope:
+        -
+        Out of scope:
+        -
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: How will we know this epic is done?
+    validations:
+      required: true
+  - type: input
+    id: customers
+    attributes:
+      label: Customers / colleges involved (optional)

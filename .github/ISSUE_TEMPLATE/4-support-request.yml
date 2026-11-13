@@ -1,0 +1,10 @@
+name: Support Request
+description: A request raised by the support team.
+type: "Support Request"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
